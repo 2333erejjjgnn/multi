@@ -1,0 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+:root{--bg:#070707;--card:#0f0f10;--muted:#efefef;--text:#ffffff;--accent:#d62828;--accent-strong:#9b1f1f;--success:#22c55e}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,Arial;background:linear-gradient(180deg,var(--bg),#0b0b0b 60%);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:36px}
+.container{width:100%;max-width:980px}

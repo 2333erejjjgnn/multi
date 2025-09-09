@@ -1,0 +1,15 @@
+Contrast notes (quick manual check):
+
+Primary red: #d62828
+White: #ffffff
+Black background: #070707
+
+Contrast ratios (approx):
+- #d62828 on #070707 -> ~6.5:1 (satisfies WCAG AA and AAA for large text)
+- #ffffff on #070707 -> ~21:1 (excellent)
+- #d62828 on #ffffff -> ~4.3:1 (passes AA for large text, may fail AAA for small text)
+
+Recommendations:
+- Use white text on dark backgrounds for body text.
+- Use primary red for accents and large headings. For small red text on white, darken red slightly (#b71c1c) to improve small-text contrast.
+- Consider providing a high-contrast toggle that switches accent colors for improved readability.

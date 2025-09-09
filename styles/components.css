@@ -1,0 +1,18 @@
+
+label{display:block;margin-top:12px;color:var(--muted);font-size:0.95rem}
+input[type=text],select{width:100%;padding:10px 12px;margin-top:6px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:rgba(0,0,0,0.24);color:var(--text)}
+input::placeholder{color:#9a9a9a}
+.form-actions{display:flex;justify-content:flex-end;margin-top:16px}
+.btn-primary{background:linear-gradient(180deg,var(--accent),var(--accent-strong));border:none;color:var(--text);padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer;transition:transform .12s ease,background .12s ease,box-shadow .12s ease}
+.btn-primary:hover{background:linear-gradient(180deg,var(--accent-strong),#7d1515);transform:translateY(-2px);box-shadow:0 12px 40px rgba(214,40,40,0.14)}
+
+.output{margin-top:18px;padding:14px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));border-radius:8px;border:1px solid rgba(255,255,255,0.02);font-family:Consolas,monospace;font-size:0.95rem;color:#f0f0f0}
+.output h3{color:var(--accent);margin:0 0 8px 0}
+.copy-row{display:flex;gap:8px;align-items:center;margin-top:12px}
+.copy-btn{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted);padding:8px 10px;border-radius:8px;cursor:pointer;transition:background .12s ease,border-color .12s ease,color .12s ease,transform .12s ease}
+.copy-btn:hover{transform:translateY(-2px);border-color:rgba(255,255,255,0.06)}
+
+.history{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px}
+.history button{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted);padding:8px 10px;border-radius:8px;cursor:pointer;display:flex;flex-direction:column;align-items:flex-start}
+.history .history-ts{font-size:0.75rem;color:rgba(255,255,255,0.42);margin-top:4px}
+.history .history-id{font-weight:600}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ANOMA NFT CROSS CHAIN PROTOCOL</title>
+</head>
+<body>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <main class="container">
+    <section class="hero" id="heroSection">
+      <h1 class="hero-title">ANOMA NFT CROSS-CHAIN PROTOCOL</h1>
+      <p class="hero-sub">Securely propose, share and discover cross-chain NFT swap intents.</p>
+    </section>
+
+    <section class="card" id="formCard">
+      <form id="swapForm" aria-labelledby="formTitle">
+        <h2 id="formTitle">Create Swap Intent</h2>
+
+        <fieldset>
+          <legend>NFT Details</legend>
+
+          <label for="nftId">NFT Identifier</label>
+          <input type="text" id="nftId" name="nftId" placeholder="#1123 or token address" required>
+
+          <label for="currentChain">Current Chain</label>
+          <select id="currentChain" name="currentChain" required>
+            <option value="polygon">Polygon</option>
+            <option value="ethereum">Ethereum</option>
+            <option value="solana">Solana</option>
+          </select>
+
+          <label for="targetChain">Target Chain</label>
+          <select id="targetChain" name="targetChain" required>
+            <option value="ethereum">Ethereum</option>
+            <option value="polygon">Polygon</option>
+            <option value="solana">Solana</option>
+          </select>
+
+          <label for="desiredType">Desired NFT / Notes</label>
+          <input type="text" id="desiredType" name="desiredType" placeholder="Optional — e.g., Rare Art, 1/1 edition">
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Create Intent</button>
+        </div>
+      </form>
+
+      <div id="output" class="output" aria-live="polite"></div>
+  <div id="history" class="history" aria-live="polite"></div>
+    </section>
+
+  <div id="srLive" aria-live="polite" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;"> </div>
+
+    <footer class="site-footer">
+      <small>Cipher Craft</small>
+    </footer>
+  </main>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
